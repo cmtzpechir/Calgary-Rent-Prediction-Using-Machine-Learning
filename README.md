@@ -100,3 +100,41 @@ This project lays the foundation for rent forecasting using interpretable machin
 - Adding more granular data (e.g., monthly rent, neighborhood-level indicators)
 - Incorporating external factors like interest rates, inflation, or migration trends
 - Deploying the model via a web app or dashboard for public use
+
+# 🛠️ 10. How to Run the Project
+
+To run this project locally:
+
+1.  Clone the repository
+
+git clone https://github.com/cmtzpechir/Calgary-Rent-Prediction-Using-Machine-Learning.git cd Calgary-Rent-Prediction-Using-Machine-Learning
+
+2.  Install dependencies
+
+pip install -r requirements.txt
+
+3.  Run the notebook
+
+Open Cleaning.ipynb in Jupyter and run all cells to reproduce the analysis.
+
+4.  Use the saved model
+
+import joblib
+
+loaded_pipeline = joblib.load('calgary_rent_lasso_pipeline.pkl') 
+
+future_pred = loaded_pipeline.predict(future_data) 
+
+# 📁 11. Project Structure
+
+Calgary-Rent-Prediction-Using-Machine-Learning/
+
+ - data/                     # Raw and cleaned datasets
+ - images/                   # Visualizations for README
+ - final_rent_model.pkl      # Saved pipeline model
+ -  Cleaning.ipynb            # Main notebook with full workflow
+ - README.md                 # Project documentation
+ - requirements.txt          # Python dependencies
+
+
+
