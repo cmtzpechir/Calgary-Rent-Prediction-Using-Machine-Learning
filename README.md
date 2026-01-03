@@ -50,6 +50,7 @@ Each model was trained on historical data (2000–2019) and tested on the last 5
 - Mean Absolute Error (MAE)
 - Root Mean Squared Error (RMSE)
 - R-squared (R²)
+  
 Lasso regression emerged as the best model, balancing predictive accuracy with interpretability. It effectively selected the most relevant features while minimizing overfitting.
 
 # ⚙️ 6. Final Model Pipeline
